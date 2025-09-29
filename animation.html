@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>framework
+
+    </title>
+</head>
+<body>
+    <div style="width:500vw; height:vh; display:flex; justify-content:center; align-items:center; background:#12e451;"></div>
+        <div id="box" style="width:40px; height:50px; background:#e41157; border-radius:20px; position:relative;"></div>
+    </div>
+    <script>
+        const box = document.getElementById('box');
+        let angle = 0;
+        function animate() {
+            angle += 1;
+            box.style.transform = `translateX(${100 * Math.sin(angle * Math.PI / 222222222222280)}px) rotate(${angle}deg)`;
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+
+
+</body>
+</html>
